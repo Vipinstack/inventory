@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+*{padding: 0;
+margin: 0;
+box-sizing: 0;}
+
+.main-container{
+  height: 100vh;
+  width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-first{
+ background-color: black;
+ height: 100vh;
+ width: 70%;
+ float: left;
+ background: #222 url('https://unsplash.it/1920/1080/?random') center center no-repeat;
+ background-size: cover;
+ height: 100%;
+ text-align: center;
+ display: flex;
+ align-items: center;
+ position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-fluid{
+ /* background-color:#1f5156; */
+  height: 100vh;
+  width: 30%;
+  float: right;
+  position: relative;
+  background:linear-gradient(to right, #1f5156 0%, white 80%);
+  background:linear-gradient(to top, #1f5156 0%, white 80%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.logo{
+  color: rgb(0, 132, 255);
+  font-weight: bold;
+  font-size:25px;
+  position: absolute;
+  top: 3em;
+  left: 5.5em;
+
+}
+
+.logo-text{
+  color: rgb(110, 111, 112);
+  font-size:20px;
+  position: absolute;
+  top: 6em;
+  left: 8em;
+
+
+}
+.logo-text-1{
+  color: rgb(110, 111, 112);
+  font-size:20px;
+  position: absolute;
+  top: 7.8em;
+  left: 7em;
+
+
+}
+input[type=email] {
+  width: 65%;
+  padding: 6px;
+  margin: 15px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: absolute;
+  top: 15em;
+  left: 5em;
+}
+
+ input[type=password] {
+  width: 65%;
+  padding: 6px;
+  margin: 15px 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  position: absolute;
+  top: 18em;
+  left: 5em;
+}
+
+
+button {
+  background-color: rgb(0, 132, 255);
   color: white;
+  padding: 6px;
+  margin: 15px 10px;
+  border: none;
+  cursor: pointer;
+  width: 65%;
+  position: absolute;
+  top: 24em;
+  left: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  opacity: 0.8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.forgot{
+  position: absolute;
+  top: 22em;
+  left: 6em;
+}
+
+#headset{
+  position: absolute;
+  bottom: 5em;
+  left: 2em;
+  color: rgb(0, 132, 255);
+  font-weight: 900;
+}
+#mailId{
+  position: absolute;
+  bottom: 3em;
+  left: 2em;
+}
+#Number{
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+}
+#maillower{
+  position: absolute;
+  bottom: 0em;
+  left: 9em;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+.container-first{   
+    height: 100vh;
+    width: 60%;
+   }
+
+.container-fluid{
+     width: 40%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+    font-size:25px;
+    left: 3em;
+}
+.logo-text{
+  left: 5em;
+}
+.logo-text-1{
+  left: 4em;
+}
+#maillower{
+  left: 6em;
+}
+
+input[type=email] {
+  left: 4em;
+}
+
+ input[type=password] {
+  left: 4em;
+}
+
+button {
+  left: 4em;
+}
+.forgot{
+  left: 5em;
+}
+
+
+ 
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+.container-first{
+  display: none;
+
+ }
+
+ 
+.container-fluid{
+  height: 100vh;
+  width: 100%;
+
+}
+
+}
+
+.tsparticles-canvas-el{
+  position: absolute;
+  right: 20em;
+  height: 100vh;
+  width: 70%;
+  z-index: 1;
 }

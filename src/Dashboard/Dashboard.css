@@ -1,0 +1,226 @@
+.container-class{
+    border: 2px solid rgb(235, 230, 230);
+    -webkit-box-shadow: 1px 3px 1px #ccc5c5;
+    -moz-box-shadow: 1px 3px 1px #ccc5c5;
+    box-shadow: 1px 3px 1px #ccc5c5;
+    position: relative;
+    width: 19.50%;
+    height: 90vh;
+    
+
+}
+ul {
+    list-style-type: none;
+}
+
+ul li{
+    padding:1.5em;
+    margin: left 0.1em;
+}
+.text-set{
+  position:absolute;
+  top:2.8em;
+  left: 5em;
+}
+.text-set-1{
+  position:absolute;
+  top:8.7em;
+  left: 5em;
+}
+.text-set-2{
+  position:absolute;
+  top:13.9em;
+  left: 5em;
+}
+.text-set-3{
+  position:absolute;
+  top:19.3em;
+  left: 5em;
+}
+.text-set-4{
+  position:absolute;
+  top:24.7em;
+  left: 5em;
+}
+
+.icon-1{
+  position: absolute;
+  top:3em;
+  left:2em;
+}
+.icon-2{
+  position: absolute;
+  top:9em;
+  left:2em;
+}
+.icon-3{
+  position: absolute;
+  top:14.3em;
+  left:2em;
+}
+.icon-4{
+  position: absolute;
+  top:19.6em;
+  left:2em;
+}
+.icon-5{
+  position: absolute;
+  top:25em;
+  left:2em;
+}
+
+#Dashboard-headset{
+  position: absolute;
+  bottom: 7em;
+  left: 2em;
+  color: rgb(0, 132, 255);
+  font-weight: 900;
+}
+#Dashboard-mailId{
+  position: absolute;
+  bottom: 5em;
+  color:white;
+  left: 2em;
+}
+#Dashboard-Number{
+  position: absolute;
+  bottom: 3em;
+  left: 2em;
+  color:white;
+}
+#Dashboard-maillower{
+  position: absolute;
+  bottom: 1em;
+  left: 2em;
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .container-class{
+        width: 20%;
+        height: 90vh;       
+    
+    }
+    .icon-1{
+        position: absolute;
+        top:3.6em;
+        left:2em;
+    }
+    .icon-2{
+        position: absolute;
+        top:9em;
+        left:2em;
+    }
+    .icon-3{
+        position: absolute;
+        top:14.3em;
+        left:2em;
+    }
+    .icon-4{
+        position: absolute;
+        top:19.6em;
+        left:2em;
+    }
+     .icon-5{
+        position: absolute;
+        top:25em;
+        left:2em;
+    }
+  
+  
+    ul li{
+        padding:1.9em;
+        margin-left: 0em;
+        
+    }
+  
+    
+    #Dashboard-headset{
+       display: none;
+    }
+    #Dashboard-mailId{
+      display: none;
+    }
+    #Dashboard-Number{
+       display: none;
+    }
+    #Dashboard-maillower{
+      display: none;
+    
+    }
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container-class{
+        width: 100%;
+        height: 10vh;
+        clip-path: circle(10% at 0% 0%);
+        transition: clip-path .20s ease-in-out;
+    
+    }
+    .container-class:hover{
+        clip-path: circle(75%);
+    }
+        
+    ul li{
+        padding:.8em;
+        margin-left: 0;
+        display:inline;
+    }
+
+    .icon-1{
+        display:none;
+    }
+    .icon-2{
+        display:none;
+    }
+    .icon-3{
+        display:none;
+    }
+    .icon-4{
+        display:none;
+    }
+     .icon-5{
+        display:none;
+    }
+  
+  
+    
+    #Dashboard-headset{
+      display: none;
+    }
+    #Dashboard-mailId{
+      display: none;
+    }
+    #Dashboard-Number{
+      display: none;
+    }
+    #Dashboard-maillower{
+      display: none;
+    
+    }
+
+}
+
+
+/* ********************************************************************************* */
+
+.Requisition-class{
+  position: absolute;
+  top: 4em;
+  left: 20em;
+}
+.chart-class{
+  position: absolute;
+  top: 20em;
+  left: 20em;
+}
+.charts-class{
+  position: absolute;
+  top: 20em;
+  left: 20em;
+}
